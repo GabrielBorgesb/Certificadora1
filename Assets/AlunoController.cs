@@ -32,20 +32,25 @@ public class AlunoController : MonoBehaviour
     }
 
     
-    //Ações
-    public void EnviarResposta()
+    public void EnviarResposta(GameObject telaResultado)
     {
+        GameObject telaAcerto = telaResultado.transform.GetChild(0).gameObject;
+        GameObject telaErro = telaResultado.transform.GetChild(1).gameObject;
+
         //Acertou
         if(respostaInput == UIController.instance.bdQuestoes.questoes[questaoAtual].resposta)
         {
+            telaAcerto.SetActive(true);
+            
             pontuacao += 100;
             UIController.instance.UpdatePontuacao(pontuacao);
         }
         else
         {
-
+            telaErro.SetActive(true);
         }
 
     }
+
 
 }

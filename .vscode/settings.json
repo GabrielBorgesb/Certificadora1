@@ -56,7 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Certificadora.sln",
-
+    "dotnet.defaultSolution": "Certificadora1.sln",
     "editor.codeLens": false
 }

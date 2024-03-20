@@ -18,7 +18,8 @@ public class UIController : MonoBehaviour
     //UI Questão
     [SerializeField] private TMP_Text questaoText;
     [SerializeField] private Image questaoImagem;
-    
+    [SerializeField] private string respostaCorreta;
+    [SerializeField] private TMP_Text respostaCorretaTexto;
 
     private void Awake() {
         if(instance == null && instance != this){
@@ -41,7 +42,11 @@ public class UIController : MonoBehaviour
         questaoText.SetText(bdQuestoes.questoes[questaoIndex].enunciado);
         questaoImagem.sprite = bdQuestoes.questoes[questaoIndex].imagem;
         aluno.questaoAtual = questaoIndex;
+        respostaCorreta = bdQuestoes.questoes[questaoIndex].resposta;
     }
 
+    public void UpdateRespostaAcerto(){
+        respostaCorretaTexto.SetText("A resposta correta é "+ respostaCorreta);
+    }
     
 }
