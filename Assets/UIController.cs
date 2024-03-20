@@ -8,18 +8,20 @@ public class UIController : MonoBehaviour
 {
     public static UIController instance;
 
-    [SerializeField] private BDQuestoes bdQuestoes;
+    public BDQuestoes bdQuestoes;
+    [SerializeField] private AlunoController aluno;
 
 
     //UI Geral
     [SerializeField] private TMP_Text pontuacaoUI;
 
-    //UI Seleção de Questão
+    //UI Questão
     [SerializeField] private TMP_Text questaoText;
     [SerializeField] private Image questaoImagem;
+    
 
     private void Awake() {
-        if(instance == null){
+        if(instance == null && instance != this){
             instance = this;
         }else
         {
@@ -38,5 +40,8 @@ public class UIController : MonoBehaviour
     public void UpdateQuestao(int questaoIndex){
         questaoText.SetText(bdQuestoes.questoes[questaoIndex].enunciado);
         questaoImagem.sprite = bdQuestoes.questoes[questaoIndex].imagem;
+        aluno.questaoAtual = questaoIndex;
     }
+
+    
 }

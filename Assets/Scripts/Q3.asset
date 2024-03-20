@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
   m_Name: Q3
   m_EditorClassIdentifier: 
-  enunciado: 1+1
-  resposta: 2
+  enunciado: 3+3
+  resposta: 4
   nivel: 1
   xp: 100
+  imagem: {fileID: 0}
