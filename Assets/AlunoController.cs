@@ -42,7 +42,8 @@ public class AlunoController : MonoBehaviour
         {
             telaAcerto.SetActive(true);
             
-            pontuacao += 100;
+            pontuacao += UIController.instance.bdQuestoes.questoes[questaoAtual].xp;
+            UIController.instance.bdQuestoes.questoes[questaoAtual].vezesCorreta++;
             UIController.instance.UpdatePontuacao(pontuacao);
         }
         else
@@ -50,6 +51,13 @@ public class AlunoController : MonoBehaviour
             telaErro.SetActive(true);
         }
 
+    }
+
+    public void ChecarVezesAcertada(){
+        
+        if(UIController.instance.bdQuestoes.questoes[questaoAtual].vezesCorreta > 0){
+            UIController.instance.AcionarTelaAviso();
+        }
     }
 
 

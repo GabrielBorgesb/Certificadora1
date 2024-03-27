@@ -21,6 +21,10 @@ public class UIController : MonoBehaviour
     [SerializeField] private string respostaCorreta;
     [SerializeField] private TMP_Text respostaCorretaTexto;
 
+    //UI Tela Aviso
+    [SerializeField] private GameObject telaAviso;
+    [SerializeField] private TMP_Text textoAviso;
+
     private void Awake() {
         if(instance == null && instance != this){
             instance = this;
@@ -47,6 +51,22 @@ public class UIController : MonoBehaviour
 
     public void UpdateRespostaAcerto(){
         respostaCorretaTexto.SetText("A resposta correta é "+ respostaCorreta);
+    }
+
+    public void ResetarPontuacao(){
+        aluno.pontuacao = 0;
+        UpdatePontuacao(0);
+
+        for(int i = 0; i < bdQuestoes.questoes.Count; i++){
+            bdQuestoes.questoes[i].vezesCorreta = 0;
+        }
+    }
+
+    public void AcionarTelaAviso(){
+
+        telaAviso.SetActive(true);
+        
+        textoAviso.SetText("Você já respondeu esta pergunta. em caso de acerto a pontuação será menor! Pontuação Atual da questão: "+ bdQuestoes.questoes[aluno.questaoAtual].xp/(bdQuestoes.questoes[aluno.questaoAtual].vezesCorreta+1));
     }
     
 }

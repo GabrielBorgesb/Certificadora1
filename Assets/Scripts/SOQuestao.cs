@@ -11,6 +11,7 @@ public class SOQuestao : ScriptableObject {
     public string resposta;
     public int nivel;
     public int xp;
+    public int vezesCorreta;
     public Sprite imagem;
 
 }
