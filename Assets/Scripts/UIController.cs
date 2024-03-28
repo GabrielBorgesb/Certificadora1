@@ -14,6 +14,9 @@ public class UIController : MonoBehaviour
 
     //UI Geral
     [SerializeField] private TMP_Text pontuacaoUI;
+    [SerializeField] private TMP_Dropdown dropdownDificuldade;
+    [SerializeField] private GameObject questoesCrescente;
+    [SerializeField] private GameObject questoesDecrescente;
 
     //UI Questão
     [SerializeField] private TMP_Text questaoText;
@@ -66,7 +69,23 @@ public class UIController : MonoBehaviour
 
         telaAviso.SetActive(true);
         
-        textoAviso.SetText("Você já respondeu esta pergunta. em caso de acerto a pontuação será menor! Pontuação Atual da questão: "+ bdQuestoes.questoes[aluno.questaoAtual].xp/(bdQuestoes.questoes[aluno.questaoAtual].vezesCorreta+1));
+        textoAviso.SetText("Você já respondeu esta pergunta. em caso de acerto a pontuação será menor! Pontuação Atual da questão: "+ bdQuestoes.questoes[aluno.questaoAtual].xp/(bdQuestoes.questoes[aluno.questaoAtual].vezesCorreta+1) + "\n\nDeseja resolver novamente?");
+    }
+
+    public void SelecionarOrdemDificuldade()
+    {
+        switch(dropdownDificuldade.value)
+        {
+            case 0: 
+                questoesCrescente.SetActive(true);
+                questoesDecrescente.SetActive(false);
+                break;
+
+            case 1:
+                questoesDecrescente.SetActive(true);
+                questoesCrescente.SetActive(false);
+                break;
+        }
     }
     
 }
