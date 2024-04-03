@@ -69,7 +69,12 @@ public class UIController : MonoBehaviour
 
         telaAviso.SetActive(true);
         
-        textoAviso.SetText("Você já respondeu esta pergunta. em caso de acerto a pontuação será menor! Pontuação Atual da questão: "+ bdQuestoes.questoes[aluno.questaoAtual].xp/(bdQuestoes.questoes[aluno.questaoAtual].vezesCorreta+1) + "\n\nDeseja resolver novamente?");
+        if(bdQuestoes.questoes[aluno.questaoAtual].vezesCorreta > 0 && bdQuestoes.questoes[aluno.questaoAtual].vezesCorreta < 5){
+            textoAviso.SetText("Você já respondeu esta pergunta. em caso de acerto a pontuação será menor! Pontuação Atual da questão: "+ bdQuestoes.questoes[aluno.questaoAtual].xp/(bdQuestoes.questoes[aluno.questaoAtual].vezesCorreta+1) + "\n\nDeseja resolver novamente?");
+        }else if(bdQuestoes.questoes[aluno.questaoAtual].vezesCorreta >= 5){
+            textoAviso.SetText("Você já respondeu esta pergunta no limite de vezes (5), Ela não te dará mais pontos em caso de acerto.\n\nDeseja resolver mesmo assim? ");
+        }
+        
     }
 
     public void SelecionarOrdemDificuldade()
