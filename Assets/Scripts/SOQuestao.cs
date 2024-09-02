@@ -14,5 +14,7 @@ public class SOQuestao : ScriptableObject {
     public int vezesCorreta;
     public Sprite imagem;
 
+    public GameObject botao;
+
 }
 

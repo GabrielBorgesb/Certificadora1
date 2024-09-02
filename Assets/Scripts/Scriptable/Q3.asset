@@ -16,4 +16,6 @@ MonoBehaviour:
   resposta: 4
   nivel: 1
   xp: 100
+  vezesCorreta: 0
   imagem: {fileID: 0}
+  botao: {fileID: 5938760234122568199, guid: 4f7ce21f36f7e154a8183f4d3b586991, type: 3}

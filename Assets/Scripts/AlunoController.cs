@@ -48,6 +48,19 @@ public class AlunoController : MonoBehaviour
             
             UIController.instance.bdQuestoes.questoes[questaoAtual].vezesCorreta++;
             UIController.instance.UpdatePontuacao(pontuacao);
+
+            //Adiciona o botão da questão acertada numa lista
+            var botaoAtual = UIController.instance.bdQuestoes.questoes[questaoAtual].botao;
+
+            // Verifica se a lista já contém o botão antes de adicionar
+            if (!UIController.instance.bdQuestoes.questoesAcertadas.Contains(botaoAtual))
+            {
+                //Adiciona na lista de questoes acertadas
+                UIController.instance.bdQuestoes.questoesAcertadas.Add(botaoAtual);
+
+                //Cria o botão da questão resolvida na tela de questões resolvidas
+                Instantiate(botaoAtual, UIController.instance.questoesAcertadasPainel.transform);
+            }
         }
         else
         {
@@ -63,5 +76,41 @@ public class AlunoController : MonoBehaviour
         }
     }
 
+    public void AtualizarNivelQuestao()
+    {
+        if(UIController.instance.bdQuestoes.questoes[questaoAtual].nivel < 4)
+        {
+            //Aumenta o nivel da questao em 1
+            UIController.instance.bdQuestoes.questoes[questaoAtual].nivel++;
+
+            //Atualiza a pontuação que a questao da dependendo do nivel
+            switch (UIController.instance.bdQuestoes.questoes[questaoAtual].nivel)
+            {
+                case 1:
+                    UIController.instance.bdQuestoes.questoes[questaoAtual].xp = 100;
+                    break;
+
+                case 2:
+                    UIController.instance.bdQuestoes.questoes[questaoAtual].xp = 250;
+                    break;
+
+                case 3:
+                    UIController.instance.bdQuestoes.questoes[questaoAtual].xp = 500;
+                    break;
+                case 4:
+                    UIController.instance.bdQuestoes.questoes[questaoAtual].xp = 1000;
+                    break;
+            }
+
+        }
+        else
+        {
+            UIController.instance.bdQuestoes.questoes[questaoAtual].nivel = 1;
+            UIController.instance.bdQuestoes.questoes[questaoAtual].xp = 100;
+        }
+
+        UIController.instance.UpdateQuestaoNivelTexto(UIController.instance.bdQuestoes.questoes[questaoAtual].nivel);
+        
+    }
 
 }

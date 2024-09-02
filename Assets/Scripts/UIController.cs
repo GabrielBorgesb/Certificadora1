@@ -23,18 +23,29 @@ public class UIController : MonoBehaviour
     [SerializeField] private Image questaoImagem;
     [SerializeField] private string respostaCorreta;
     [SerializeField] private TMP_Text respostaCorretaTexto;
+    [SerializeField] private TMP_Text questaoNivel;
 
     //UI Tela Aviso
     [SerializeField] private GameObject telaAviso;
     [SerializeField] private TMP_Text textoAviso;
 
+    //UI Questões acertadas
+    [SerializeField] public GameObject questoesAcertadasPainel;
+
+    public int questaoAtualIndex;
+
     private void Awake() {
-        if(instance == null && instance != this){
+
+        if(instance == null && instance != this)
+        {
             instance = this;
         }else
         {
             Destroy(gameObject);
         }
+
+        //Reseta  a lista de questões acertadas ao iniciar
+        UIController.instance.bdQuestoes.questoesAcertadas.Clear();
     }
 
 
@@ -50,6 +61,8 @@ public class UIController : MonoBehaviour
         questaoImagem.sprite = bdQuestoes.questoes[questaoIndex].imagem;
         aluno.questaoAtual = questaoIndex;
         respostaCorreta = bdQuestoes.questoes[questaoIndex].resposta;
+        questaoAtualIndex = questaoIndex;
+        questaoNivel.text = "Nível da questão: " + bdQuestoes.questoes[questaoIndex].nivel;
     }
 
     public void UpdateRespostaAcerto(){
@@ -91,6 +104,11 @@ public class UIController : MonoBehaviour
                 questoesCrescente.SetActive(false);
                 break;
         }
+    }
+    
+    public void UpdateQuestaoNivelTexto(int nivel)
+    {
+        questaoNivel.text = "Nível da questão: " + nivel;
     }
     
 }

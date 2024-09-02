@@ -9,7 +9,7 @@ public class BDQuestoes : ScriptableObject {
     public List<SOQuestao> questoes = new List<SOQuestao>();
 
 
+    public List<GameObject> questoesAcertadas = new List<GameObject>();
 
-    
 }
 
