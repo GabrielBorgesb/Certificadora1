@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
+  m_Name: Q2E
+  m_EditorClassIdentifier: 
+  enunciado: "Em uma corrida de carros em uma pista oval, um dos carros est\xE1 acelerando
+    uniformemente a uma taxa constante. O piloto come\xE7a do repouso e acelera por
+    10 segundos at\xE9 atingir a velocidade de 40 m/s. A acelera\xE7\xE3o obtida
+    pelo carro foi de"
+  resposta: 4
+  nivel: 1
+  xp: 100
+  vezesCorreta: 1
+  imagem: {fileID: 0}
+  botao: {fileID: 4302950769622302643, guid: 28a0e4f28cdbab14e854c2738d02b976, type: 3}
