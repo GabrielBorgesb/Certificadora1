@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
   m_Name: Q1
   m_EditorClassIdentifier: 
-  enunciado: 1+1
-  resposta: 2
+  enunciado: "Um carro viaja por uma estrada reta e deserta e o motorista mant\xE9m
+    uma velocidade constante de 80 km/h. Ap\xF3s se passarem 2 horas desde o in\xEDcio
+    da viagem o motorista percorreu"
+  resposta: 160
   nivel: 1
   xp: 100
   vezesCorreta: 0
   imagem: {fileID: 21300000, guid: c00eb6be5784b474a8e6ee09470c0105, type: 3}
+  botao: {fileID: 4768379009456037455, guid: 6d6208c44191e2645a665816a3c3f170, type: 3}

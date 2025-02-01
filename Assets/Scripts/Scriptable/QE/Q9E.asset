@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
+  m_Name: Q9E
+  m_EditorClassIdentifier: 
+  enunciado: "Em um circuito, tr\xEAs resistores R1, R2 e R3 est\xE3o conectados
+    em s\xE9rie. Suas resist\xEAncias s\xE3o 20 \u03A9, 30 \u03A9 e 40 \u03A9, respectivamente.
+    Qual \xE9 a resist\xEAncia equivalente do circuito?"
+  resposta: 90
+  nivel: 3
+  xp: 500
+  vezesCorreta: 0
+  imagem: {fileID: 0}
+  botao: {fileID: 5778958345432773417, guid: d70cf55104825e04f9803de0cb8518ed, type: 3}

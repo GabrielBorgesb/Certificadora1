@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
+  m_Name: Q5E
+  m_EditorClassIdentifier: 
+  enunciado: "Em um experimento com gelo e \xE1gua os conceitos de calor sens\xEDvel
+    e latente est\xE3o sendo verificados. Inicialmente o gelo est\xE1 a -10\u202F\xB0C,
+    sendo aquecido at\xE9 que se torne \xE1gua a 0\xB0C.  Se havia 200 gramas de
+    gelo a -10\xB0C e, ap\xF3s o aquecimento, obteve 200 gramas de \xE1gua a 0\xB0C,
+    a quantidade total de calor absorvida durante esse processo \xE9 de ...  Considere
+    80 cal/g como calor latente e 0,5 cal/g\xBAC como calor espec\xEDfico do gelo."
+  resposta: 17
+  nivel: 2
+  xp: 250
+  vezesCorreta: 0
+  imagem: {fileID: 0}
+  botao: {fileID: 49338367383991097, guid: 891cfe5ea7c2c6c4cb62acfb32c052a9, type: 3}

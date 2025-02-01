@@ -9,10 +9,15 @@ public class SOQuestao : ScriptableObject {
     
     public string enunciado;
     public string resposta;
+    public int repostaEletronica1;
+    public int repostaEletronica2;
     public int nivel;
     public int xp;
     public int vezesCorreta;
     public Sprite imagem;
+    
+
+    public GameObject botao;
 
 }
 

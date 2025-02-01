@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
+  m_Name: Q6E
+  m_EditorClassIdentifier: 
+  enunciado: "Foi observado que em dias muito quentes, os trilhos de uma ferrovia
+    se expandem devido ao aumento da temperatura. Ap\xF3s observa\xE7\xF5es, constatou-se
+    que, 50 metros de trilhos inicialmente a 20\xBAC, quando aquecidos para 40\xBAC,
+    aumentam o comprimento para"
+  resposta: 50,11
+  nivel: 2
+  xp: 250
+  vezesCorreta: 0
+  imagem: {fileID: 0}
+  botao: {fileID: 5928698443534633534, guid: 78b2b150c60502a4b9178e1c788e6c57, type: 3}

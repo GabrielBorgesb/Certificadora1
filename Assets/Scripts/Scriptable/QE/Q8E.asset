@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
+  m_Name: Q8E
+  m_EditorClassIdentifier: 
+  enunciado: "Considere um circuito el\xE9trico simples, composto por uma bateria,
+    um resistor de 20 \u03A9. Se a bateria fornece uma diferen\xE7a de potencial
+    de 120 V, qual ser\xE1 a corrente el\xE9trica que passa pelo circuito?"
+  resposta: 6
+  nivel: 3
+  xp: 500
+  vezesCorreta: 0
+  imagem: {fileID: 0}
+  botao: {fileID: 6030922578184781402, guid: eb5cd1091f0ffbe4b9280c5081fbfa09, type: 3}

@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
   m_Name: Q3
   m_EditorClassIdentifier: 
-  enunciado: 3+3
-  resposta: 4
+  enunciado: "Um estudante est\xE1 mergulhando em um lago ao n\xEDvel do mar e atinge
+    uma profundidade de 2 metros. Qual \xE9 a press\xE3o que a \xE1gua exerce sobre
+    ele nessa profundidade? Considere a acelera\xE7\xE3o da gravidade como 10 m/s^2
+    e a densidade da \xE1gua como 1000 espa\xE7o kg/m^3"
+  resposta: 121000
   nivel: 1
   xp: 100
+  vezesCorreta: 0
   imagem: {fileID: 0}
+  botao: {fileID: 5938760234122568199, guid: 4f7ce21f36f7e154a8183f4d3b586991, type: 3}

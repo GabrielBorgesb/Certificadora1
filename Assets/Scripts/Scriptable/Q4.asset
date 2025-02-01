@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
   m_Name: Q4
   m_EditorClassIdentifier: 
-  enunciado: 1+1
-  resposta: 2
+  enunciado: "Um cientista est\xE1 conduzindo uma pesquisa em um laborat\xF3rio localizado
+    em um pa\xEDs que utiliza a escala Celsius, mas suas descobertas precisam ser
+    comunicadas para cientistas de um pa\xEDs que utiliza a escala Fahrenheit. A
+    temperatura de 25\xB0C foi registrada, o que em Fahrenheit equivale a"
+  resposta: 77
   nivel: 2
   xp: 250
+  vezesCorreta: 0
+  imagem: {fileID: 0}
+  botao: {fileID: 2240155078486480109, guid: 553ba1a6990fb2d45a19e8a18eb31624, type: 3}

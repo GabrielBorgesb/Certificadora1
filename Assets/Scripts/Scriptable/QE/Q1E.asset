@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
+  m_Name: Q1E
+  m_EditorClassIdentifier: 
+  enunciado: "Com base nos seus conhecimentos em eletr\xF4nica, selecione as portas
+    l\xF3gicas corretas para formar uma Porta XOR. Arraste os blocos das portas dispon\xEDveis
+    abaixo e combine-os nos espa\xE7os vazios para gerar a porta l\xF3gica desejada. "
+  resposta: 160
+  nivel: 1
+  xp: 100
+  vezesCorreta: 0
+  imagem: {fileID: 21300000, guid: c00eb6be5784b474a8e6ee09470c0105, type: 3}
+  botao: {fileID: 4768379009456037455, guid: 6d6208c44191e2645a665816a3c3f170, type: 3}

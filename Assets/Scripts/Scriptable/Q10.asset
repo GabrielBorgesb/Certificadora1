@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ee09051f7035245ab4138ffa1c8693, type: 3}
   m_Name: Q10
   m_EditorClassIdentifier: 
-  enunciado: 1+1
-  resposta: 2
+  enunciado: "(Enem 2018) Com o avan\xE7o das multifun\xE7\xF5es dos dispositivos
+    eletr\xF4nicos port\xE1teis, como os smartphones, o gerenciamento da dura\xE7\xE3o
+    da bateria desses equipamentos torna-se cada vez mais cr\xEDtico. O manual de
+    um telefone celular diz que a quantidade de carga fornecida pela sua bateria
+    \xE9 de 1500 mAh.  A quantidade de carga fornecida por essa bateria, em coulomb,
+    \xE9 de"
+  resposta: 1500
   nivel: 4
   xp: 1000
+  vezesCorreta: 0
+  imagem: {fileID: 0}
+  botao: {fileID: 5072697689112736820, guid: b1c148d43e33dbc44bbc76861c9a9ba6, type: 3}
